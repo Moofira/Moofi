@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.section {
+    padding: 2rem;
+    margin: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#feedbackForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#feedbackForm label, #feedbackForm input, #feedbackForm textarea, #feedbackForm button {
+    margin-bottom: 1rem;
+}
+
+#thankYouMessage {
+    font-size: 1.5rem;
+    color: green;
+    display: none;
+}
+
+#thankYouMessage.show {
+    display: block;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hidden {
+    display: none;
+}
